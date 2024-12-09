@@ -49,6 +49,15 @@ This project provides the following functionalities:
 6. **Determine Sentiment**:
    - Calculates a sentiment score based on positive and negative word counts.
    - Outputs a sentiment classification (positive, negative, or neutral).
+7. **Topic Selection**:  
+   - Browse and select topics from the existing library.  
+   - View detailed analysis results for selected topics/news.  
+8. **Content Management**:  
+   - Add new articles or text files to the library.  
+   - Expand the collection with user-provided content.  
+9. **Text-Based Interface**:  
+   - User-friendly command-line interface.  
+   - Interactive text-based navigation and selection.  
 
 ---
 
