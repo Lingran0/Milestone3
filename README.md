@@ -89,3 +89,60 @@ The project is organized into the following components:
 3.  Place your text files in the appropriate directory.
 4. Modify the file paths in the code as needed for your environment.
 5. Run the program and follow the on-screen instructions to process your files.
+
+/*  
+ * Text Analysis System Refactoring Suggestions  
+ * ==========================================  
+ *   
+ * Main Class  
+ * ----------  
+ * Reason for Refactoring:  
+ * - Currently handles multiple responsibilities (UI, file operations, coordination)  
+ * - Needs better separation of concerns  
+ *   
+ * Reduced Coupling:  
+ * - Introduce UserInterface interface to handle all user interactions  
+ * - Create FileOperationHandler to manage file-related operations  
+ * - Move menu operations to separate MenuHandler class  
+ * - Reduce direct dependencies on Scanner and System.out  
+ *   
+ * Improved Cohesion:  
+ * - Create dedicated ArticleManager class to handle article library operations  
+ * - Move all file processing methods to separate TextAnalysisController  
+ * - Main class will only coordinate between components  
+ * - Results in clearer responsibility boundaries  
+ *   
+ * TextProcessor Class  
+ * ------------------  
+ * Reason for Refactoring:  
+ * - Combines file operations with text processing (mixed responsibilities)  
+ *   
+ * Reduced Coupling:  
+ * - Create FileReader interface for file operations  
+ * - Inject file reading dependency through constructor  
+ * - Remove direct file handling from text processing methods  
+ *   
+ * Improved Cohesion:  
+ * - Split into TextCleaner and TextReader classes  
+ * - TextCleaner focuses purely on text processing operations  
+ * - Move all file operations to separate FileHandler class  
+ * - Add validation methods for text processing operations  
+ *   
+ * StatisticCalculator Class  
+ * ------------------------  
+ * Reason for Refactoring:  
+ * - Handles both sentiment analysis and general statistics  
+ * - Need to separate concerns for better maintainability  
+ *   
+ * Reduced Coupling:  
+ * - Create SentimentAnalyzer interface for sentiment-related operations  
+ * - Separate lexicon loading into LexiconLoader class  
+ * - Use dependency injection for sentiment analysis components  
+ *   
+ * Improved Cohesion:  
+ * - Split into BasicStatistics and SentimentAnalysis classes  
+ * - Create separate WordFrequencyAnalyzer class  
+ * - Each class has a single, well-defined responsibility  
+ * - Move lexicon management to dedicated LexiconManager class  
+
+ */
