@@ -175,7 +175,6 @@ public class main {
     }
 
     private static void initializeLibrary() {
-        // 初始化 articleLibrary，确保路径为绝对路径
         articleLibrary.put("pet", "/Users/zhanglingran/Desktop/class_files/Senior_Fall/CS/HW/Lab_milestone1/dir/pet2.txt");
         articleLibrary.put("fashion", "/Users/zhanglingran/Desktop/class_files/Senior_Fall/CS/HW/Lab_milestone1/dir/fashion1.txt");
         articleLibrary.put("sport", "/Users/zhanglingran/Desktop/class_files/Senior_Fall/CS/HW/Lab_milestone1/dir/sport3.txt");
@@ -186,10 +185,9 @@ public class main {
         articleLibrary.keySet().forEach(topic -> System.out.println("- " + topic));
 
         System.out.println("\nPlease enter the topic you want to analyze:");
-        scanner.nextLine(); // Consume the newline
+        scanner.nextLine(); 
         String topic = scanner.nextLine();
 
-        // 验证用户输入的主题是否存在于库中
         if (!articleLibrary.containsKey(topic)) {
             System.out.println("Invalid topic. Please select a valid topic.");
             return;
@@ -197,7 +195,6 @@ public class main {
 
         String filePath = articleLibrary.get(topic);
 
-        // 验证文件路径是否存在
         if (!Files.exists(Paths.get(filePath))) {
             System.out.println("Error: The file for the selected topic does not exist. Path: " + filePath);
             return;
