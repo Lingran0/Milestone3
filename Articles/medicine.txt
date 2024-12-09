@@ -1,0 +1,10 @@
+Abstract
+We comprehensively described elderly Medicare women with an outpatient visit in 2011 and fracture within 2 years before. These women were at very high risk for subsequent fracture and high healthcare utilization and cost, especially those with vertebral or multiple fractures. However, rates of fracture prevention treatments were low.
+
+Introduction: Postmenopausal women with osteoporosis are stratified to high and very-high fracture risk categories, and this categorization drives algorithms for osteoporosis management in osteoporosis treatment guidelines. This study comprehensively describes a very-high-risk cohort.
+
+Methods: This retrospective cohort study used the Medicare 20% database; elderly women with an outpatient visit in 2011 and fracture within 2 years before the visit were included. Outcomes included fracture risk, all-cause and fracture-related healthcare resource utilization and cost, and osteoporosis medication use in the 5 years after the visit.
+
+Results: Overall, 43,193 patients were included. The 5-year probability was 0.36 for major fracture and 0.11 and 0.17 for hip fracture and vertebral fracture, respectively, much higher than the guidelines' 10-year probability thresholds for very-high-risk (0.3 for major fracture, 0.045 for hip fracture). Rates of hospitalizations, emergency department visits or observation stays, and skilled nursing facility stays in year 1 were 53.7, 57.0, and 18.8 per 100 patient-years, respectively, decreasing slightly in subsequent years. Mean healthcare cost was $23,700 in year 1, decreasing to $18,500 in year 5. About 29.1% of patients received osteoporosis medications in year 1, decreasing to 16.9% by year 5. Rates for all outcomes, especially fractures, were much higher among vertebral and multiple fracture cohorts.
+
+Conclusion: Elderly women with a fracture within last 2 years were at very-high-risk for subsequent fracture and high healthcare utilization and cost, especially those with vertebral or multiple fractures. However, rates of fracture prevention treatments were low. More effort is needed to identify and treat patients at very-high-risk for fracture.
